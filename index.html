@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kokoh — Batu Alam, Bata & Material Bangunan</title>
+  <meta name="description" content="Kokoh menyediakan batu alam, bata merah, bata roster, bata tempel, dan material bangunan pilihan. Lihat katalog dan tanya harga langsung via WhatsApp.">
+  <meta name="theme-color" content="#252A27">
+  <meta property="og:title" content="Kokoh — Material Berkualitas, Bangunan Lebih Kokoh">
+  <meta property="og:description" content="Katalog batu alam, bata, dan material bangunan. Konsultasi dan pemesanan via WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home" data-nav="home">
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main">
+    <!-- 3.1 Hero -->
+    <section class="hero" id="beranda" aria-labelledby="hero-title">
+      <div class="hero__photo">
+        <img src="assets/img/photos/hero-interior.jpg" width="1920" height="1440" fetchpriority="high"
+             alt="Dinding aksen batu alam pada ruang keluarga">
+        <span class="media__badge hero__badge">Foto referensi</span>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow">Batu Alam • Bata • Material Bangunan</p>
+          <h1 id="hero-title">Material Berkualitas, Bangunan Lebih <span>Kokoh.</span></h1>
+          <p class="hero__sub">Temukan batu alam, bata, dan material pilihan untuk hunian maupun proyek Anda.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#produk">Lihat Produk</a>
+            <a class="btn btn--ghost" data-wa="general" href="#">
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+              Konsultasi via WhatsApp
+            </a>
+          </div>
+          <ul class="hero__points">
+            <li>Spesifikasi jelas</li>
+            <li>Bantu hitung kebutuhan</li>
+            <li>Pesan cepat via WhatsApp</li>
+          </ul>
+        </div>      </div>
+    </section>
+
+    <!-- 3.2 Kenapa Pilih Kami -->
+    <section class="section section--stone" id="keunggulan" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Kenapa Pilih Kami</p>
+          <h2 class="section__title" id="why-title">Material tepat, proses pemesanan jelas.</h2>
+        </div>
+        <ul class="why-grid">
+          <li class="why-item"><span class="why-item__num">01</span><h3>Spesifikasi Jelas</h3><p>Informasi ukuran, satuan, dan kegunaan material disajikan terstruktur.</p></li>
+          <li class="why-item"><span class="why-item__num">02</span><h3>Pilihan Lengkap</h3><p>Batu alam dan bata untuk dinding, fasad, taman, hingga dekorasi.</p></li>
+          <li class="why-item"><span class="why-item__num">03</span><h3>Konsultasi Kebutuhan</h3><p>Dibantu memilih material dan memperkirakan jumlah sesuai luas area.</p></li>
+          <li class="why-item"><span class="why-item__num">04</span><h3>Pesan via WhatsApp</h3><p>Tanya harga dan pesan langsung ke admin tanpa proses yang rumit.</p></li>
+          <li class="why-item"><span class="why-item__num">05</span><h3>Info Stok & Kirim</h3><p>Ketersediaan produk dan ongkos kirim dikonfirmasi langsung oleh admin.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3.3 Katalog Produk -->
+    <section class="section" id="produk" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Katalog Produk</p>
+          <h2 class="section__title" id="catalog-title">Pilih material untuk proyek Anda.</h2>
+          <p class="section__lead">Harga yang tercantum adalah harga mulai dari. Harga final, stok, dan ongkos kirim dikonfirmasi admin melalui WhatsApp sesuai ukuran, jumlah, dan lokasi pengiriman.</p>
+        </div>
+        <div class="catalog__tools">
+          <div class="search">
+            <label for="product-search" class="sr-only">Cari nama produk</label>
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm9 2-4-4"/></svg>
+            <input id="product-search" type="search" placeholder="Cari nama produk…" autocomplete="off">
+          </div>
+          <div class="chips" id="product-filters" role="group" aria-label="Filter kategori produk"></div>
+        </div>
+        <p class="catalog__count" id="product-count" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="empty-state" id="product-empty" hidden>
+          <p>Produk tidak ditemukan. Coba kata kunci lain atau tanyakan langsung ke admin.</p>
+          <button class="btn btn--outline" type="button" id="product-reset">Tampilkan semua produk</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.7 Cara Pesan -->
+    <section class="section section--dark" id="cara-pesan" aria-labelledby="howto-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Cara Pesan</p>
+          <h2 class="section__title" id="howto-title">Lima langkah mudah memesan material.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step"><h3>Pilih produk</h3><p>Temukan material yang Anda butuhkan di katalog.</p></li>
+          <li class="step"><h3>Klik WhatsApp</h3><p>Tekan tombol Pesan via WA atau Konsultasi.</p></li>
+          <li class="step"><h3>Kirim detail</h3><p>Sebutkan produk, jumlah, dan lokasi pengiriman.</p></li>
+          <li class="step"><h3>Konfirmasi admin</h3><p>Admin mengonfirmasi harga, stok, ongkir, dan estimasi pengiriman.</p></li>
+          <li class="step"><h3>Sepakati pesanan</h3><p>Lanjutkan pembayaran sesuai instruksi admin.</p></li>
+        </ol>
+        <p class="steps__note">Pesanan dianggap terkonfirmasi setelah admin menyetujui harga, stok, jumlah, dan detail pengiriman.</p>
+      </div>
+    </section>
+
+    <!-- 3.4 Galeri -->
+    <section class="section" id="galeri" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Galeri</p>
+          <h2 class="section__title" id="gallery-title">Tekstur, warna, dan pola material.</h2>
+          <p class="section__lead">Klik foto untuk melihat lebih besar.</p>
+        </div>
+        <div class="chips" id="gallery-filters" role="group" aria-label="Filter kategori galeri"></div>
+        <ul class="gallery-grid" id="gallery-grid"></ul>
+        <p class="gallery__note">Foto berlabel “Foto referensi” menggambarkan jenis material dan bukan foto stok atau proyek Kokoh. <a href="kredit-foto.html">Kredit foto</a>.</p>
+      </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section class="section section--stone" id="tentang" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__visual" id="about-visual" aria-hidden="true"></div>
+        <div>
+          <p class="eyebrow">Tentang Kami</p>
+          <h2 class="section__title" id="about-title">Mitra material untuk hunian dan proyek Anda.</h2>
+          <p class="section__lead">Kokoh menyediakan batu alam, bata, dan material bangunan pilihan, dengan informasi produk yang jelas dan konsultasi langsung bersama tim kami.</p>
+          <ul class="about__list">
+            <li>Bantu memilih material sesuai fungsi: dinding, fasad, taman, atau dekorasi.</li>
+            <li>Bantu memperkirakan jumlah kebutuhan berdasarkan luas area.</li>
+            <li>Konfirmasi harga, stok, dan pengiriman langsung melalui WhatsApp.</li>
+          </ul>
+          <ul class="audience" aria-label="Kami melayani">
+            <li>Pemilik rumah</li><li>Kontraktor</li><li>Tukang</li><li>Arsitek</li><li>Developer</li><li>Reseller</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.5 Testimoni (otomatis disembunyikan bila belum ada data asli) -->
+    <section class="section" id="testimoni" aria-labelledby="testi-title" hidden>
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Testimoni</p>
+          <h2 class="section__title" id="testi-title">Kata pelanggan kami.</h2>
+        </div>
+        <div class="testimonial-grid" id="testimonial-list"></div>
+      </div>
+    </section>
+
+    <!-- 3.8 Artikel -->
+    <section class="section" id="artikel" aria-labelledby="article-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Artikel</p>
+          <h2 class="section__title" id="article-title">Panduan memilih material.</h2>
+        </div>
+        <div class="article-grid" id="article-preview"></div>
+        <div class="section__foot"><a class="btn btn--outline" href="artikel.html">Lihat semua artikel</a></div>
+      </div>
+    </section>
+
+    <!-- 3.6 CTA -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container cta-band__inner">
+        <div>
+          <h2 id="cta-title">Butuh Material untuk Proyek Anda?</h2>
+          <p>Konsultasikan jenis material, jumlah kebutuhan, dan pengiriman bersama tim Kokoh.</p>
+        </div>
+        <a class="btn btn--wa" data-wa="general" href="#">
+          <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+          Tanya Harga via WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="kontak" class="site-footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/textures.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
