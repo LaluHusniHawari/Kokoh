@@ -10,6 +10,9 @@
   <meta property="og:description" content="Katalog batu alam, bata, dan material bangunan. Konsultasi dan pemesanan via WhatsApp.">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/img/photos/hero-interior.jpg" fetchpriority="high"
+        imagesrcset="assets/img/photos/hero-interior-960.jpg 960w, assets/img/photos/hero-interior.jpg 1920w"
+        imagesizes="(min-width: 900px) 1200px, 700px">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,7 +25,10 @@
     <!-- 3.1 Hero -->
     <section class="hero" id="beranda" aria-labelledby="hero-title">
       <div class="hero__photo">
-        <img src="assets/img/photos/hero-interior.jpg" width="1920" height="1440" fetchpriority="high"
+        <img src="assets/img/photos/hero-interior.jpg"
+             srcset="assets/img/photos/hero-interior-960.jpg 960w, assets/img/photos/hero-interior.jpg 1920w"
+             sizes="(min-width: 900px) 1200px, 700px"
+             width="1920" height="1440" fetchpriority="high" loading="eager" decoding="sync"
              alt="Dinding aksen batu alam pada ruang keluarga">
         <span class="media__badge hero__badge">Foto referensi</span>
       </div>
